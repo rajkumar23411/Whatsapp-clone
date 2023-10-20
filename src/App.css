@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+.rotate-animation {
+    transition: animation 0.1s linear ease-in-out;
+    animation: sligth-rotate 0.1s linear;
+}
+.reverse-rotate-animation {
+    transition: animation 0.1s linear ease-in-out;
+    animation: sligth-rotate-reverse 0.1s linear;
+}
+@keyframes sligth-rotate {
+    from {
+        transform: rotate(-60deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes sligth-rotate-reverse {
+    from {
+        transform: rotate(60deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+.showIcons {
+    animation: showIcons 0.2s linear;
+}
+@keyframes showIcons {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.animation-scale {
+    animation: scaleAnimation 0.4s ease-in-out forwards;
+    animation-delay: 0.2s;
+}
+.animate-transform {
+    animation: transformAnimation 0.3s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+@keyframes scaleAnimation {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes transformAnimation {
+    from {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
